@@ -1,0 +1,52 @@
+<template name="dashboard">
+<div class="container">
+	<div class="row">
+
+		<div class="jumbotron">
+			  <h1>Hi {{username}},</h1>
+			  <p>Where do you wanna go today?</p>
+			 
+			  <p>
+				 <a class="btn btn-success btn-lg home-button" title="Gmail" target="_blank" href="http://gmail.com">
+				 <img src="/img/gmail.png" height="40px">
+				 </a>
+				 <a class="btn btn-default btn-lg home-button" title="Gdrive" target="_blank" href="https://drive.google.com/">
+				 <img src="/img/googledrive.png" height="40px">
+				 </a>
+			     <a class="btn btn-primary btn-lg home-button" title="Salesforce" target="_blank" href="http://salesforce.com">
+			     <img src="/img/salesforce-logo.png" width="40px">
+			     </a> 
+			 	 <a class="btn btn-warning btn-lg home-button" title="Zenefits" target="_blank" href="https://secure.zenefits.com/accounts/login/">
+			 	 <img src="/img/zenefits.png" height="40px">
+			 	 </a>
+			 	 <a class="btn btn-info btn-lg home-button" title="Marketo" target="_blank" href="https://app-ab05.marketo.com/">
+			  	 <img src="/img/marketo.png" height="40px" width="40px">
+			  	 </a>
+			 	 <a class="btn btn-success btn-lg home-button" title="Yesware" target="_blank" href="https://app.yesware.com/">
+			 	 <img src="/img/yesware.png" height="40px">
+			 	 </a>
+			  	 <a class="btn btn-default btn-lg home-button" title="JIRA" target="_blank" href="https://zenefits.atlassian.net/">
+			  	 <img src="/img/jira.png" height="40px">
+			  	 </a>
+			  	 <a class="btn btn-primary btn-lg home-button" title="Yammer" target="_blank" href="https://www.yammer.com/zenefits.com">
+			  	 <img src="/img/yammer.png" height="40px">
+			  	 </a>
+			  </p>
+		</div>
+
+		<div class="panel panel-default">
+			  <div class="panel-body">
+			    <a href="{{pathFor 'campaignList'}}"><h3><i class="fa fa-large fa-calendar"></i> Campaigns</h3></a>
+			 </div>
+		 </div>
+
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+			    <a href="{{pathFor 'linkList'}}"><h3><i class="fa fa-large fa-globe"></i> Link Repository</h3></a>
+			  </div>
+		</div>
+
+	</div>
+</div>
+</template>

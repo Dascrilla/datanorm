@@ -1,0 +1,14 @@
+<template name="linkList">
+<div class="container">
+    <div class="row col-lg-6 col-lg-offset-3">
+      <h3>Links</h3>
+      <div class="list-group">
+          {{#each link}}
+             {{> linkItem}}
+          {{/each}}
+      </div>    
+          <a class="btn btn-success" href="{{pathFor 'linkSubmit'}}"><i fa fa-plus></i> New Link</a>
+      </div>
+    </div>
+
+  </template>

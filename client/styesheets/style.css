@@ -1,0 +1,12 @@
+.logo {
+background-position: 0 0;
+}
+.icon {
+background: url("img/marketing-icons.png?62f913b2072e") no-repeat;
+}
+.home-button{
+	margin-top: 5px;
+	width:73px;
+	height: 61px; 
+	padding: auto;
+}
