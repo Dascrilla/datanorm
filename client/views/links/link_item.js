@@ -7,6 +7,10 @@ Template.linkItem.helpers({
 		else if (Links.findOne({_id: this._id}).category === "Salesforce Dashboard"){
 			return "sfdcdashboard.png"
 		}
-		else{return "googledrive.png"}
+		else if (Links.findOne({_id: this._id}).category === "Google Drive")
+			{return "googledrive.png"}
+			
+		else{return "mode.png"}
+
 	}
 })
