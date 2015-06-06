@@ -10,7 +10,8 @@ Template.linkItem.helpers({
 		else if (Links.findOne({_id: this._id}).category === "Google Drive")
 			{return "googledrive.png"}
 			
-		else{return "mode.png"}
+		else if (Links.findOne({_id: this._id}).category === "Mode Query")
+			{return "mode.png"}
 
 	}
 })
