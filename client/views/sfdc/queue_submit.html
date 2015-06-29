@@ -1,0 +1,61 @@
+<template name="queueSubmit">
+
+<div class="row col-lg-8 col-lg-offset-2 well">
+<form>
+
+<div class="form-group">
+  <label class="control-label" for="focusedInput">Request Type</label>
+  <select multiple="" class="form-control" name ="request_type">
+          <option>New SDR Hire</option>
+          <option>Update SDR Info</option>
+          <option>Terminate SDR</option>
+        </select>
+</div>
+
+ <div class="form-group">
+    <label class="control-label" for="focusedInput">Salesforce User Name</label>
+    <input class="form-control" id="focusedInput" type="text" name="username">
+  </div> 
+
+<div class="form-group">
+  <label class="control-label" for="focusedInput">SDR Type</label>
+  <select multiple="" class="form-control" name ="sdr_type">
+          <option>Inbound</option>
+          <option>Outbound</option>
+        </select>
+</div>
+
+ 
+<div class="form-group">
+  <label class="control-label" for="focusedInput">Office</label>
+  <select multiple="" class="form-control" name="office">
+          <option>SF</option>
+          <option>PHX</option>
+        </select>
+</div>
+
+<div class="form-group">
+  <label class="control-label" for="focusedInput">Manager</label>
+ <select multiple="" class="form-control" name="manager">
+          <option>Ashley Kelly</option>
+          <option>Hana Francisco</option>
+          <option>Miles Spafford</option>
+        </select>
+</div>
+
+<div class="form-group">
+<label class="control-label" for="focusedInput">Start Date</label>
+<div class="input-group date">
+<span class="input-group-addon"> 
+  <i class="glyphicon glyphicon-th"></i></span>
+  <input type="text" class="form-control" name="hiredate">
+</div>
+</div>
+ 
+  <input type="submit" value="Save" class="btn btn-info "/>
+	<input type="submit" value="Cancel" class="cancel btn btn-default"/>
+
+  </form>
+  </div>
+</template> 
+

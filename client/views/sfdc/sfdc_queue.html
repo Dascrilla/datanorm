@@ -1,0 +1,21 @@
+<template name="sfdcQueue">
+<div class="container">
+    <div class="row col-lg-6 col-lg-offset-3">
+      <h3>Your Salesforce Queue</h3>
+      <div class="list-group">
+          {{#each sfdcQueue}}
+             {{> queueItem}}
+          {{/each}}
+      </div>    
+          <a class="btn btn-success" href="{{pathFor 'queueSubmit'}}"><i fa fa-plus></i> New Queue Item</a>
+      </div>
+    </div>
+
+  </template>
+
+
+
+  <template name="queueItem">
+ <a class="list-group-item">
+  <strong>{{status}} {{request_type}}: {{username}} | </strong> <strong text-align="right">{{executeDate}}</strong></a>
+</template>

@@ -21,3 +21,5 @@ accounts-password
 coffeescript
 accounts-ui
 houston:admin
+rajit:bootstrap3-datepicker
+momentjs:moment
