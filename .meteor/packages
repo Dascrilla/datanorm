@@ -23,3 +23,5 @@ accounts-ui
 houston:admin
 rajit:bootstrap3-datepicker
 momentjs:moment
+email
+meteorhacks:ssr

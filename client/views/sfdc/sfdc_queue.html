@@ -7,15 +7,14 @@
              {{> queueItem}}
           {{/each}}
       </div>    
-          <a class="btn btn-success" href="{{pathFor 'queueSubmit'}}"><i fa fa-plus></i> New Queue Item</a>
+          <a class="btn btn-success" href="{{pathFor 'queueSubmit'}}"><i class="fa fa-plus"></i> New Queue Item</a>
+          <button type="submit" class="btn btn-info email-submit"><i class="fa fa-envelope"></i> Send Queue Items for Approval</button>
       </div>
     </div>
-
   </template>
 
-
-
   <template name="queueItem">
- <a class="list-group-item">
-  <strong>{{status}} {{request_type}}: {{username}} | </strong> <strong text-align="right">{{executeDate}}</strong></a>
+      <a class="list-group-item">
+     <a href="#">{{status}} {{request_type}}: {{username}} for {{executeDate}}</a>
+      </a> 
 </template>

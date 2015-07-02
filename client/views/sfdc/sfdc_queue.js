@@ -15,5 +15,12 @@ Template.queueItem.helpers({
   }
 });
 
+Template.sfdcQueue.events({
+  'click button': function(e){
+    e.preventDefault();
+    Meteor.call('sendEmail');
+    console.log('success!');
+  }
+}); 
 
 

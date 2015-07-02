@@ -1,0 +1,29 @@
+
+<div class="container">
+    <div class="row col-lg-6 col-lg-offset-3">
+      <h3>Your Salesforce Queue</h3>
+      <div class="list-group">
+          {{#each sfdcQueue}}
+              <a class="list-group-item">
+		    	<p>{{sfdcUser}}</p>
+		      </a> 
+
+		      <a class="list-group-item">
+		    	<p>{{requestType}}</p>
+		      </a> 
+
+		      <a class="list-group-item">
+		    	<p>{{role}}</p>
+		      </a> 
+
+		      <a class="list-group-item">
+		    	<p>{{manager}}</p>
+		      </a> 
+
+		       <a class="list-group-item">
+		    	<p>{{director}}</p>
+		      </a> 
+          {{/each}}
+      </div>    
+      </div>
+    </div>
