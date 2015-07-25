@@ -1,29 +1,36 @@
-
 <div class="container">
     <div class="row col-lg-6 col-lg-offset-3">
       <h3>Your Salesforce Queue</h3>
-      <div class="list-group">
+    <table>
+  <tr>
+    <th>User Name</th>
+    <th>Request Type</th> 
+    <th>Role</th>
+     <th>Manager</th>
+     <th>Director</th>
+  </tr>
           {{#each sfdcQueue}}
-              <a class="list-group-item">
-		    	<p>{{sfdcUser}}</p>
-		      </a> 
+          	<tr>
+          	<td>
+		    	{{sfdcUser}}
+		     </td>
+		     <td>
+		    	{{request_type}}     
+		      </td>
+		      <td>	     
+		    	{{role}}		      
+		      </td>
+		      <td>
+		    	{{manager}}
+		      </td>
+		      <td>
+		    	{{director}}		 
+		      </td>
+		    </tr>
+          {{/each}} 
+          </table>
 
-		      <a class="list-group-item">
-		    	<p>{{requestType}}</p>
-		      </a> 
-
-		      <a class="list-group-item">
-		    	<p>{{role}}</p>
-		      </a> 
-
-		      <a class="list-group-item">
-		    	<p>{{manager}}</p>
-		      </a> 
-
-		       <a class="list-group-item">
-		    	<p>{{director}}</p>
-		      </a> 
-          {{/each}}
-      </div>    
       </div>
     </div>
+
+    

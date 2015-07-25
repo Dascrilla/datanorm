@@ -4,7 +4,6 @@ Template.sfdcQueue.helpers({
     }
 });
 
-
 Template.queueItem.helpers({
   executeDate: function(){
   	if (moment().date() > 15) {
