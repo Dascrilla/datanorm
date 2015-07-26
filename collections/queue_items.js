@@ -27,7 +27,7 @@ queueItemWithSameUsername= QueueItems.findOne({username: queueItemAttributes.use
 		{
 			userId: user._id,
 			created: new Date().getTime(), 
-			status: "Requested"
+			status: "In Queue"
 		});
 
 	QueueItems.insert(queueItem); 

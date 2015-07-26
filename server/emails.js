@@ -5,7 +5,7 @@ SSR.compileTemplate('queue_email', Assets.getText('queue_email.html'));
 
 Template.queue_email.helpers({
   sfdcQueue: function(){
-    return QueueItems.find();
+    return QueueItems.find({userId: Meteor.userId(), status: "In Queue"});
     }, 
     sfdcUser: function(){
       return this.username
@@ -54,6 +54,11 @@ Meteor.methods({
       }
 
     Email.send(options)
+
+    QueueItems.update({
+      userId: Meteor.userId(), status: 'In Queue'},
+      {$set: { status: 'Requested' }},
+       {multi: true});
     console.log(options);
   }
 });
