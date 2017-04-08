@@ -8,31 +8,29 @@
       <span class="icon-bar"></span>
     </button>
 
-    <a class="navbar-brand" href="{{pathFor 'dashboard'}}"><i class="fa fa-tachometer"></i> ZenDash</a>
+    <a class="navbar-brand" href="{{pathFor 'dashboard'}}"><i class="fa fa-money"></i> Comp</a>
   </div>
 
   <div class="navbar-collapse collapse">
   <ul class="nav navbar-nav pull-right">
             {{> accountButtons}}
          </ul>
-  
+
 {{#if currentUser}}
     <ul class="nav navbar-nav">
-    <li> <a href="{{pathFor 'linkList'}}"><i class="fa fa-globe"></i> Links</a></li> 
-    <li> <a href="{{pathFor 'campaignList'}}"><i class="fa fa-calendar"></i> Campaigns</a></li> 
-
+        <li> <a href="{{pathFor 'linkList'}}"><i class="fa fa-user"></i> Users</a></li>
+    <li> <a href="{{pathFor 'linkList'}}"><i class="fa fa-table"></i> Plans</a></li>
+    <li> <a href="{{pathFor 'payeeList'}}"><i class="fa fa-table"></i> Payees</a></li>
     </ul>
 {{/if}}
 
     <!--<form class="navbar-form navbar-left">
       <input type="text" class="form-control col-lg-8" placeholder="Search">
-    </form> --> 
+    </form> -->
 
-      
+
   </div>
 </div>
 </div>
 
 </template>
-
-

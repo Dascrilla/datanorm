@@ -75,9 +75,7 @@
         <item url="file://$USER_HOME$/.meteor/packages/rajit_bootstrap3-datepicker/1.4.1/web.browser/packages/rajit:bootstrap3-datepicker.js" />
         <item url="file://$USER_HOME$/.meteor/packages/ajduke_bootstrap-tagsinput/0.7.0/web.browser/packages/ajduke_bootstrap-tagsinput/lib/bootstrap-tagsinput/dist/bootstrap-tagsinput.css" />
         <item url="file://$USER_HOME$/.meteor/packages/rajit_bootstrap3-datepicker/1.4.1/web.browser/packages/rajit:bootstrap3-datepicker/lib/css/bootstrap-datepicker3.css" />
-        <item url="file://$USER_HOME$/.meteor/packages/anti_modals/0.4.0/web.browser/packages/anti:modals.js" />
         <item url="file://$USER_HOME$/.meteor/packages/random/1.0.3/web.browser/packages/random.js" />
-        <item url="file://$USER_HOME$/.meteor/packages/anti_modals/0.4.0/web.browser/packages/anti:modals/client/alert.css" />
         <item url="file://$USER_HOME$/.meteor/packages/reactive-dict/1.1.0/web.browser/packages/reactive-dict.js" />
         <item url="file://$USER_HOME$/.meteor/packages/autoupdate/1.2.1/web.browser/packages/autoupdate.js" />
         <item url="file://$USER_HOME$/.meteor/packages/id-map/1.0.3/web.browser/packages/id-map.js" />
@@ -181,9 +179,7 @@
       <root url="file://$USER_HOME$/.meteor/packages/rajit_bootstrap3-datepicker/1.4.1/web.browser/packages/rajit:bootstrap3-datepicker.js" />
       <root url="file://$USER_HOME$/.meteor/packages/ajduke_bootstrap-tagsinput/0.7.0/web.browser/packages/ajduke_bootstrap-tagsinput/lib/bootstrap-tagsinput/dist/bootstrap-tagsinput.css" />
       <root url="file://$USER_HOME$/.meteor/packages/rajit_bootstrap3-datepicker/1.4.1/web.browser/packages/rajit:bootstrap3-datepicker/lib/css/bootstrap-datepicker3.css" />
-      <root url="file://$USER_HOME$/.meteor/packages/anti_modals/0.4.0/web.browser/packages/anti:modals.js" />
       <root url="file://$USER_HOME$/.meteor/packages/random/1.0.3/web.browser/packages/random.js" />
-      <root url="file://$USER_HOME$/.meteor/packages/anti_modals/0.4.0/web.browser/packages/anti:modals/client/alert.css" />
       <root url="file://$USER_HOME$/.meteor/packages/reactive-dict/1.1.0/web.browser/packages/reactive-dict.js" />
       <root url="file://$USER_HOME$/.meteor/packages/autoupdate/1.2.1/web.browser/packages/autoupdate.js" />
       <root url="file://$USER_HOME$/.meteor/packages/id-map/1.0.3/web.browser/packages/id-map.js" />

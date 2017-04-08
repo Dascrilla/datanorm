@@ -1,4 +1,4 @@
-Template.layout.helpers({
+ gTemplate.layout.helpers({
 	isApp: function(){
 		if (location.pathname === "/"){
 			return false; 
