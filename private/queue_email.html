@@ -1,36 +1,34 @@
 <div class="container">
     <div class="row col-lg-6 col-lg-offset-3">
-      <h3>Your Salesforce Queue</h3>
-    <table>
-  <tr>
-    <th>User Name</th>
-    <th>Request Type</th> 
-    <th>Role</th>
-     <th>Manager</th>
-     <th>Director</th>
-  </tr>
-          {{#each sfdcQueue}}
-          	<tr>
-          	<td>
-		    	{{sfdcUser}}
-		     </td>
-		     <td>
-		    	{{request_type}}     
-		      </td>
-		      <td>	     
-		    	{{role}}		      
-		      </td>
-		      <td>
-		    	{{manager}}
-		      </td>
-		      <td>
-		    	{{director}}		 
-		      </td>
-		    </tr>
-          {{/each}} 
-          </table>
+        <h3>Your Salesforce Queue</h3>
+        <table>
+            <tr>
+                <th>User Name</th>
+                <th>Request Type</th>
+                <th>Role</th>
+                <th>Manager</th>
+                <th>Director</th>
+            </tr>
+            {{#each sfdcQueue}}
+            <tr>
+                <td>
+                    {{sfdcUser}}
+                </td>
+                <td>
+                    {{request_type}}
+                </td>
+                <td>
+                    {{role}}
+                </td>
+                <td>
+                    {{manager}}
+                </td>
+                <td>
+                    {{director}}
+                </td>
+            </tr>
+            {{/each}}
+        </table>
 
-      </div>
     </div>
-
-    
+</div>

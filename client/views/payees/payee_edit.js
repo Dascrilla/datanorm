@@ -1,3 +1,13 @@
+
+Template.payeeEdit.rendered = function() {
+        $('#start_date').datepicker({
+            orientation: "bottom auto"
+        });
+        $('#end_date').datepicker({
+            orientation: "bottom auto"
+        });
+    },
+
 Template.payeeEdit.helpers({
     payee: function() {
         return Payees.findOne(Session.get('currentPayeeId'));
@@ -8,7 +18,6 @@ Template.payeeEdit.helpers({
         }).payee
     }
 });
-
 /* EVENT HANDLERS */
 
 /* Cancel handler */
