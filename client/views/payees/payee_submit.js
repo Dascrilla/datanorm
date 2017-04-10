@@ -23,13 +23,13 @@ Template.payeeSubmit.rendered = function() {
                 name: $(e.target).find('[name=name]').val(),
                 email: $(e.target).find('[name=email]').val(),
                 type: $(e.target).find('[name=type]').val(),
-                quota: $(e.target).find('[name=quota]').val(),
+                quota: parseInt($(e.target).find('[name=quota]').val()),
                 start_date: $(e.target).find('[name=start_date]').val(),
                 end_date: $(e.target).find('[name=end_date]').val(),
                 manager: $(e.target).find('[name=manager]').val(),
                 team: $(e.target).find('[name=team]').val(),
                 comp_plan: $(e.target).find('[name=comp_plan]').val(),
-                variable_comp: $(e.target).find('[name=variable_comp]').val(),
+                variable_comp: parseInt($(e.target).find('[name=variable_comp]').val()),
                 payout_schedule: $(e.target).find('[name=payout_schedule]').val(),
                 capped: $(e.target).find('[name=capped]').val(),
                 capped_pct: $(e.target).find('[name=capped_pct]').val()
@@ -44,6 +44,7 @@ Template.payeeSubmit.rendered = function() {
                     if (error.error === 302)
                         Router.go('payeeList');
                 } else {
+                    Bert.alert('Payee Added!', 'success', 'growl-top-right');
                     Router.go('payeeList');
                 }
             });

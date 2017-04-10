@@ -25,14 +25,13 @@ Meteor.methods({
             throw new Meteor.Error(401, "You need to login!");
         // ensure form validation
         if (!payeeAttributes.email)
-            throw new Meteor.Error(422, 'Please fill in at least the text');
+            throw new Meteor.Error(422, 'Please fill in at least the email');
         // check that there are no previous records that would be duplicates
         if (payeeAttributes.email && payeeWithSameEmail) {
             throw new Meteor.Error(302,
                 'You already have a record for that text!',
                 payeeWithSameEmail._id);
         }
-
         // pick out the whitelisted keys
         var payee = _.extend(_.pick(payeeAttributes,
             'name',

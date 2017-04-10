@@ -9,7 +9,6 @@
                   $sum: '$quota'
               }
           };
-
           if (filter.team !== 'all') {
               group._id.manager = '$manager';
           }

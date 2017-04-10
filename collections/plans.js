@@ -1,6 +1,6 @@
-Deals = new Meteor.Collection('deals');
+Plans = new Meteor.Collection('plans');
 
-Deals.allow({
+Plans.allow({
     insert: function() {
         return true;
     },

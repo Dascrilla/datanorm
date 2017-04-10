@@ -1,7 +1,3 @@
-Meteor.publish('links', function() {
-    return Links.find();
-});
-
 Meteor.publish('payees', function() {
     return Payees.find();
 });

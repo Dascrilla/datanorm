@@ -1,5 +1,5 @@
 Template.payeeItem.helpers({
-    monthly_variable: function() {
+    monthlyVariable: function() {
         return Payees.findOne().variable_comp / 12;
     }
 })
