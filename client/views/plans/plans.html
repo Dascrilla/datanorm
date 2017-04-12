@@ -1,0 +1,66 @@
+<template name="planList">
+<div class="container">
+    <div class="row col-lg-8 col-lg-offset-2">
+      {{#each plan}}
+         {{> planItem}}
+      {{/each}}
+      <a class="btn btn-success" href="{{pathFor 'payeeSubmit'}}"><i class= "fa fa-plus"></i>New Tier</a>
+      </div>
+      </div>
+  </template>
+
+<template name="planItem">
+  <h3>{{name}}</h3>
+  <table class="table table-striped table-hover ">
+    <thead>
+      <tr>
+        <th>Attainment Tier</th>
+        <th>Factor</th>
+        <th>Payout Attainment</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{percentify tiers.[0]}}</td>
+        <td>{{factors.[0]}}</td>
+        <td>{{payoutAttainment tiers.[0]}}</td>
+      </tr>
+      <tr>
+        <td>{{percentify tiers.[1]}}</td>
+        <td>{{factors.[1]}}</td>
+        <td>{{payoutAttainment tiers.[1]}}</td>
+      </tr>
+      <tr>
+        <td>{{percentify tiers.[2]}}</td>
+        <td>{{factors.[2]}}</td>
+        <td>{{payoutAttainment tiers.[2]}}</td>
+      </tr>
+      <tr>
+        <td>{{percentify tiers.[3]}}</td>
+        <td>{{factors.[3]}}</td>
+        <td>{{payoutAttainment tiers.[3]}}</td>
+      </tr>
+      <tr>
+        <td>{{percentify tiers.[4]}}</td>
+        <td>{{factors.[4]}}</td>
+        <td>{{payoutAttainment tiers.[4]}}</td>
+      </tr>
+      <tr>
+        <td>{{percentify tiers.[5]}}</td>
+        <td>{{factors.[5]}}</td>
+        <td>{{payoutAttainment tiers.[5]}}</td>
+      </tr>
+      <tr>
+        <td>{{percentify tiers.[6]}}</td>
+        <td>{{factors.[6]}}</td>
+        <td>{{payoutAttainment tiers.[6]}}</td>
+      </tr>
+      <tr>
+        <td>{{percentify tiers.[7]}}</td>
+        <td>{{factors.[7]}}</td>
+        <td>{{payoutAttainment tiers.[7]}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+  </template>
