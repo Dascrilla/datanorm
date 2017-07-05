@@ -1,6 +1,6 @@
-Deals = new Meteor.Collection('deals');
+Objects = new Meteor.Collection('objects');
 
-Deals.allow({
+Objects.allow({
     insert: function() {
         return true;
     },

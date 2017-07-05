@@ -16,13 +16,13 @@ if (Payees.find().count() === 0) {
         capped_pct: null
     });
 }
-if (Deals.find().count() === 0) {
-    Deals.insert({
-        owner: "Ryan Basch",
-        name: "My first Deal",
-        amount: 10000,
-        close_date: "04/15/2017",
-        type: "HR | One"
+if (Objects.find().count() === 0) {
+    Objects.insert({
+        id: "00eu39fje93j93jr39",
+        name: "Bob Smith",
+        company: "Acme Co, Inc.",
+        title: "CEO",
+        industry: "Software"
     });
 }
 

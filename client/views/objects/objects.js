@@ -1,6 +1,6 @@
-Template.dealList.helpers({
-    deal: function() {
-        return Deals.find();
+Template.objectList.helpers({
+    object: function() {
+        return Objects.find({},{limit:200})
     }
 });
 
@@ -22,7 +22,7 @@ Template.upload.events({
             header: true,
             dynamicTyping: true,
             complete(results, file) {
-                Meteor.call('parseUploadDeals', results.data, (error, response) => {
+                Meteor.call('parseUploadObjects', results.data, (error, response) => {
                     if (error) {
                         console.log(error.reason);
                     } else {

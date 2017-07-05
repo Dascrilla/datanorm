@@ -1,0 +1,35 @@
+<template name="objectList">
+<div class="container">
+    <div class="row col-lg-8 col-lg-offset-2">
+      <h3>Load in a Salesforce object to Normalize</h3>
+
+      <table class="table table-striped table-hover ">
+        <thead>
+          <tr>
+            <th><a href ="#">Id</a></th>
+            <th><a href ="#">Name</a></th>
+            <th><a href ="#">Company</a></th>
+            <th><a href ="#">Title</a></th>
+            <th><a href ="#">Indusry</a></th>
+          </tr>
+        </thead>
+        <tbody>
+            {{#each object}}
+               {{> objectRow}}
+            {{/each}}
+        </tbody>
+      </table>
+     <div>{{> upload}}</div>
+      </div>
+      </div>
+  </template>
+
+  <template name="objectRow">
+    <tr>
+        <td>{{id}}</td>
+        <td>{{name}}</td>
+        <td>{{company}}</td>
+        <td>{{title}}</td>
+        <td>{{industry}}</td>
+    </tr>
+  </template>

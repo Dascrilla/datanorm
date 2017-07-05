@@ -8,7 +8,7 @@
       <span class="icon-bar"></span>
     </button>
 
-    <a class="navbar-brand" href="{{pathFor 'dashboard'}}"><i class="fa fa-money"></i> Comp</a>
+    <a class="navbar-brand" href="{{pathFor 'dashboard'}}"><i class="fa fa-table"></i> DataNormer</a>
   </div>
 
   <div class="navbar-collapse collapse">
@@ -18,9 +18,7 @@
 
 {{#if currentUser}}
     <ul class="nav navbar-nav">
-        <li> <a href="{{pathFor 'payeeList'}}"><i class="fa fa-user"></i> Payees</a></li>
-    <li> <a href="{{pathFor 'dealList'}}"><i class="fa fa-table"></i> Deals</a></li>
-    <li> <a href="{{pathFor 'calcList'}}"><i class="fa fa-table"></i> Calcs</a></li>
+        <li> <a href="{{pathFor 'objectList'}}"><i class="fa fa-user"></i> Objects</a></li>
     </ul>
 {{/if}}
 

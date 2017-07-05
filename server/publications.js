@@ -1,8 +1,8 @@
 Meteor.publish('payees', function() {
     return Payees.find();
 });
-Meteor.publish('deals', function() {
-    return Deals.find();
+Meteor.publish('objects', function() {
+    return Objects.find();
 });
 Meteor.publish('plans', function() {
     return Plans.find();
